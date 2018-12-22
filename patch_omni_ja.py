@@ -12,7 +12,7 @@ from subprocess import call
 import re
 
 rel_browser_xhtml = "chrome/browser/content/browser/browser.xhtml"
-rel_browser_xul = "chrome/browser/content/browser/browser.xhtml"
+rel_browser_xul = "chrome/browser/content/browser/browser.xul"
 
 class OmniPatcher:
     """
