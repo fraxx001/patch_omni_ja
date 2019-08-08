@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/env python3
 
 __author__ = "Alexander Fratzer"
 __email__ = "alexander.fratzer@gmail.com"
@@ -48,7 +48,7 @@ class OmniPatcher:
 
         pattern1 = re.compile(r"(<key id=\"key_close.*)(reserved=\"true\")")
 
-        for file in [rel_browser_xhtml, rel_browser_xul]:
+        for file in [rel_browser_xul]:
             with open(file, "r") as f:
                 content = f.read()
 
