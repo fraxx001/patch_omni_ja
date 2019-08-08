@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = firefox
+
+[Action]
+Description = Patching firefox key_close policy.
+When = PostTransaction
+Exec = /usr/local/bin/patch_omni_ja.py /usr/lib/firefox
